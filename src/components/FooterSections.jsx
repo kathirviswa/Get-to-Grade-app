@@ -31,8 +31,6 @@ const FooterSections = () => {
   
       return () => clearInterval(timer)
     }, [])
-  
-  
     return (
     <div>
     <div className="min-h-72 bg-blue-950 flex flex-col">
@@ -65,8 +63,6 @@ const FooterSections = () => {
               </div>
             </div>
           
-
-          
             {/* Main Content */}
             <div className="flex flex-col  md:flex-row justify-between items-start space-y-6 md:space-y-0">
               <div className="space-y-4">
@@ -98,7 +94,8 @@ const FooterSections = () => {
                 <div>
                   <h3 className="relative top-5 lg:top-0 md:top-0 font-bold text-md  lg:text-xl md:text-xl mb-2 underline decoration-red-400">Need Any Help ?</h3>
                   {/* <p className=" flex-row space-x-10 p-2 " >
-                   
+                   <a href="tel:+917708446450" className="text-black  text-sm md:text-md lg:text-xl font-bold underline md:text-justify">+91 77084 46450</a>
+                </p>
                   </p> */}
                 <p className="relative top-5 md:flex-col flex-col md:space-x-8 space-x-6">
                 <a href="mailto:gettograde.in@gmail.com" className="text-black text-sm md:text-md lg:text-xl font-bold underline">gettograde@gmail.com</a>
@@ -114,44 +111,14 @@ const FooterSections = () => {
           type="email"
           placeholder="Enter your email address"
           className="w-64 items-center md:w-full lg:w-full bg-gray-300 text-sm md:text-md lg:text-md  px-4 py-3 rounded-full border-gray-700 text-black dark:bg-gray-700  dark:placeholder-gray-700 dark:text-white focus:outline-1 focus:ring-2 focus:ring-black pr-32"
-          required
-        />
+          required/>
         <button
           type="submit"
-          className="absolute right-1 top-1 px-4 py-2 text-sm md:text-md lg:text-md text-white bg-blue-950 rounded-full hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
-        >
+          className="absolute right-1 top-1 px-4 py-2 text-sm md:text-md lg:text-md text-white bg-blue-950 rounded-full hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
           Get Started
         </button>
-      </form>
-
-                {/* //form input*
-     <form className="max-w-md mx-auto">   
-    <label htmlFor ="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-    <div className="relative pt-2">
-    <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-            {/* <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-            </svg> 
-        </div>
-        {/* //Email input *
-        <input type="search" id="default-search" className ="block lg:w-96  p-4 ps-1 text-md text-black border text-md md:text-md rounded-full font-semibold bg-gray-300 focus:ring-blue-500  dark:bg-gray-700  dark:placeholder-gray-400 dark:text-white" placeholder="Enter your email address" required />
-        <button type="submit" className ="text-white font-semibold absolute end-2.5 bottom-2.5 bg-blue-950 hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-3xl  text-md px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
-    </div>
-</form>
-
-                     {/* <input
-                      type="email"
-                      placeholder="Enter your email address"
-                      className="flex-grow px-4 py-2 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                    <button
-                      type="submit"
-                      className="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-                    >
-                      Get Started
-                    </button>  */}
-              
-                </div>
+      </form> 
+      </div>
                 
               </div>
             </div>
@@ -167,5 +134,4 @@ const FooterSections = () => {
     </div>
   )
 }
-
 export default FooterSections;
