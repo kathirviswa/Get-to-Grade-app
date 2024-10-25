@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 
-
  import footer from "../assets/footer.png";
  import  logo from "../assets/logo.png";
  import Instagram from "../assets/Instagram.png";
