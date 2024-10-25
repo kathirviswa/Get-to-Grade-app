@@ -32,9 +32,10 @@ const FooterSections = () => {
     }, [])
     return (
     <div>
-    <div className="min-h-72 bg-blue-950 flex flex-col">
-      <div className="flex-grow container mx-auto px-4 py-8">
-        <div className="bg-orange-50 rounded-lg shadow-lg overflow-hidden ">
+
+    <div className="max-h-[470px] bg-blue-950 flex flex-col relative top-32">
+      <div className="flex-grow container mx-auto px-4 py-8 ">
+        <div className=" relative -top-36  bg-orange-50 rounded-lg shadow-lg overflow-hidden ">
           <div className="p-6 space-y-6 top">
 
             {/* Header */}
@@ -46,7 +47,7 @@ const FooterSections = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg> */}
                 </div>
-                
+            
                 <div className="">
                   <p className="text-red-500 font-bold">Upcoming Events</p>
                   <h1 className="text-2xl md:text-3xl font-bold">Base way Meetup</h1>
@@ -92,39 +93,42 @@ const FooterSections = () => {
               <div className="w-full md:w-auto space-y-4 p-6 ">
                 <div>
                   <h3 className="relative top-5 lg:top-0 md:top-0 font-bold text-md  lg:text-xl md:text-xl mb-2 underline decoration-red-400">Need Any Help ?</h3>
-                  {/* <p className=" flex-row space-x-10 p-2 " >
-                   <a href="tel:+917708446450" className="text-black  text-sm md:text-md lg:text-xl font-bold underline md:text-justify">+91 77084 46450</a>
-                </p>
-                  </p> */}
+                
+                  
                 <p className="relative top-5 md:flex-col flex-col md:space-x-8 space-x-6">
                 <a href="mailto:gettograde.in@gmail.com" className="text-black text-sm md:text-md lg:text-xl font-bold underline">gettograde@gmail.com</a>
-                <a href="tel:+917708446450" className="text-black  text-sm md:text-md lg:text-xl font-bold underline md:text-justify">+91 77084 46450</a>
+                 <a href="tel:+917708446450" className="relative  md:top-0 text-black  text-sm md:text-md lg:text-xl font-bold underline md:text-justify">+91 77084 46450</a>
                 </p>
+
+                 {/* <p className=" relative  text-end flex-row space-x-10 p-2 " >
+                   <a href="tel:+917708446450" className="text-black  text-sm md:text-md lg:text-xl font-bold underline md:text-justify">+91 77084 46450</a>
+                </p> */}
+
                 </div>
 
                    {/* Email subscription */}
                 <div className=" relative md:top-20 max-w-md mx-auto p-6 rounded-lg shadow-sm">
-                  <h3 className="font-bold mb-2 md:text-md text-sm lg:text-md text-center md:text-center text-blue-800">Get Regular Updates from Get to Grade</h3>
+                  <h3 className="font-bold mb-2 md:text-lg text-sm lg:text-lg text-center md:text-center text-blue-800">Get Regular Updates from Get to Grade</h3>
                   <form className="relative">
         <input
           type="email"
           placeholder="Enter your email address"
-          className="w-64 items-center md:w-full lg:w-full bg-gray-300 text-sm md:text-md lg:text-md  px-4 py-3 rounded-full border-gray-700 text-black dark:bg-gray-700  dark:placeholder-gray-700 dark:text-white focus:outline-1 focus:ring-2 focus:ring-black pr-32"
+          className=" relative md:right-0 lg:right-0 right-7 w-72 items-center h-16 md:w-full lg:w-full bg-gray-300 text-sm md:text-md lg:text-md  px-4 py-3 rounded-full border-gray-700 text-black dark:bg-gray-700  dark:placeholder-gray-700 dark:text-white focus:outline-1 focus:ring-2 focus:ring-black pr-32"
           required/>
         <button
           type="submit"
-          className="absolute right-1 top-1 px-4 py-2 text-sm md:text-md lg:text-md text-white bg-blue-950 rounded-full hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
+          className="absolute md:right-3 -right-8 md:top-2 top-3 px-4 py-2 text-md md:text-lg lg:text-md text-white bg-blue-950 rounded-full hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
           Get Started
         </button>
       </form> 
       </div>
-                
+          
               </div>
             </div>
           </div>
         </div>
       </div>
-      <footer className=" underline text-white text-center py-4">
+      <footer className=" md:text-md text-sm lg:text-lg relative -top-32 underline text-white text-center">
         <p>Copyrights © 2023 Get to Grade. All Rights Reserved</p>
       </footer>
     </div>
